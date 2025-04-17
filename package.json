@@ -1,19 +1,35 @@
 {
   "name": "auth-manager",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Dead-simple pluggable auth/session manager with Memcached support",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "scripts": {
-    "test": "jest"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "auth",
+    "session",
+    "memcached",
+    "express",
+    "middleware",
+    "pluggable"
+  ],
+  "author": "Jah Ez",
+  "license": "MIT",
   "dependencies": {
     "cookie-parser": "^1.4.7",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
     "memcached": "^2.2.2",
     "supertest": "^7.1.0",
     "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/memcached": "^2.2.10",
+    "@types/uuid": "^9.0.1",
+    "typescript": "^5.0.0"
   }
 }

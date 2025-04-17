@@ -102,7 +102,7 @@ export function withRateLimit(
 }
 
 export class MemcachedSessionAdapter implements SessionAdapter {
-  constructor(private client: any, private ttl: number = 3600) {}
+  constructor(private client: Memcached, private ttl: number = 3600) {}
 
   async create(user: AuthUser): Promise<string> {
     const sessionId = uuidv4();
