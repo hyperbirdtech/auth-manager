@@ -1,0 +1,19 @@
+{
+  "name": "auth-manager",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "memcached": "^2.2.2",
+    "supertest": "^7.1.0",
+    "uuid": "^11.1.0"
+  }
+}
