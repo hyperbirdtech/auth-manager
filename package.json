@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Dead-simple pluggable auth/session manager with Memcached support",
   "main": "dist/index.js",
-  "types": "dist/types.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
